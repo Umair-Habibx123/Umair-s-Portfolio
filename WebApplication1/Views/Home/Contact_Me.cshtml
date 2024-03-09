@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Contact Me";
+}
+<link rel="stylesheet" href="~/css/Contact_Me.css">
+<script src="~/js/Contact_Me.js"></script>
+    <div class ="container-fluid">
+        <section class="mb-4" >
+
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly.</p>
+
+            <div class="row">
+
+
+                <div class="col-md-8 mb-md-0 mb-5" style="padding-left:4%">
+                    <form id="contact-form" name="contact-form" action="" method="POST">
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-5">
+                                <div class="md-form mb-0">
+                                        <label for="SenderName" class="">Your name</label>
+                                            <input type="text" id="SenderName" name="SenderName" class="form-control">
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-5">
+                                <div class="md-form mb-0"> 
+                                        <label for="recipientEmail" class="">Your email</label>
+                                            <input type="text" id="recipientEmail" name="recipientEmail" class="form-control">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="md-form mb-0">
+                                        <label for="phone" class="">Contact No.</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+92 123 456 7890" class="form-control">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="col-md-10">
+
+                                <div class="md-form">
+                                    <label for="message">Your message</label>
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                    </form>
+                    <div class="text-center text-md-left">
+                                     <button class="btn btn-primary" onclick="sendEmail()">Send Email</button>
+                                            </div>
+                    <br />
+                    
+                    <div class="status"></div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Rawalpindi, Punjab 46000, PAK</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+92 342 511 7949</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>umairhabibabc@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
